@@ -214,8 +214,8 @@ function updateSimulator() {
 function applyTheme(theme) {
   const isDark = theme === "dark";
   document.body.classList.toggle("dark", isDark);
-  themeToggle.querySelector(".theme-icon").textContent = isDark ? "NOCHE" : "DIA";
-  themeToggle.querySelector(".theme-label").textContent = isDark ? "Oscuro" : "Claro";
+  themeToggle.classList.toggle("is-dark", isDark);
+  themeToggle.setAttribute("aria-label", "Cambiar tema");
   localStorage.setItem(themeKey, theme);
 }
 

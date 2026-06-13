@@ -225,13 +225,33 @@ button {
 }
 
 .theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0 14px;
+  position: relative;
+  flex: 0 0 auto;
+  width: 48px;
+  min-height: 28px;
+  padding: 0;
   color: var(--text);
   background: var(--surface-strong);
   border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.theme-toggle::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1677ff, #7fb8ff);
+  box-shadow: 0 6px 12px rgba(22, 119, 255, 0.22);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.theme-toggle.is-dark::before {
+  transform: translateX(20px);
+  background: linear-gradient(135deg, #d9e4f2, #ffffff);
 }
 
 .panel {
@@ -953,10 +973,6 @@ input[type="checkbox"] {
 
   .brand strong {
     font-size: 0.92rem;
-  }
-
-  .theme-label {
-    display: none;
   }
 
   .hero-copy,

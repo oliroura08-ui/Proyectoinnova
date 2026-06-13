@@ -20,7 +20,7 @@
 
   <text x="226" y="121" fill="#062B5F" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="500" letter-spacing="-1">Eduficia</text>
   <path d="M238 151h68M492 151h68" stroke="#2F7D3C" stroke-width="2"/>
-  <text x="322" y="158" fill="#2F7D3C" font-family="Georgia, 'Times New Roman', serif" font-size="24">Energia que educa.</text>
+  <text x="322" y="158" fill="#2F7D3C" font-family="Georgia, 'Times New Roman', serif" font-size="24">Energía que educa.</text>
 
   <defs>
     <filter id="shadow" x="32" y="18" width="180" height="184" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
