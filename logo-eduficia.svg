@@ -5,26 +5,17 @@
 
   <g filter="url(#shadow)">
     <circle cx="122" cy="110" r="70" fill="#FFFFFF"/>
-    <circle cx="122" cy="110" r="68" stroke="#D9E4F2" stroke-width="2"/>
-
-    <path d="M70 139A58 58 0 0 1 156 63" stroke="#062B5F" stroke-width="7" stroke-linecap="round"/>
-    <path d="M151 49l17 18-24 4" stroke="#2F7D3C" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M174 81a58 58 0 0 1-86 76" stroke="#2F7D3C" stroke-width="7" stroke-linecap="round"/>
-    <path d="M93 172l-17-18 24-4" stroke="#062B5F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <path d="M56 128c25-16 105-16 132 0" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round"/>
-    <path d="M101 84h42v38h-42V84Z" fill="#FFFFFF" stroke="#062B5F" stroke-width="4.5" stroke-linejoin="round"/>
-    <path d="M90 85l32-25 32 25" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M109 91v29M122 91v29M135 91v29" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round"/>
-    <path d="M122 60V42M122 44h17v10h-17" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <path d="M66 111V141H92V107L79 96L64 107" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M152 107V141H178V111L165 96L150 107" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M76 119h6M76 132h6M162 119h6M162 132h6" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round"/>
-
-    <path d="M62 147h17l8-24 11 42 10-27 7 9h19" stroke="#2F7D3C" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M144 156c-9-27 8-47 40-52-2 33-22 53-47 50" stroke="#2F7D3C" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M139 165c14-24 28-39 45-55" stroke="#2F7D3C" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="122" cy="110" r="61" stroke="#062B5F" stroke-opacity="0.24" stroke-width="4"/>
+    <path d="M82 116a40 40 0 0 1 70-26" stroke="#062B5F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M150 75l9 16-18-2" stroke="#2F7D3C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M90 133c17-10 47-10 64 0" stroke="#062B5F" stroke-width="5" stroke-linecap="round"/>
+    <path d="M101 96h42v31h-42V96Z" fill="#FFFFFF" stroke="#062B5F" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M94 98l28-22 28 22" stroke="#062B5F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M110 104v21M122 104v21M134 104v21" stroke="#062B5F" stroke-width="5" stroke-linecap="round"/>
+    <path d="M122 76V59M122 61h16v9h-16" stroke="#062B5F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M78 148h16l6-15 8 31 8-22 6 8h17" stroke="#2F7D3C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M145 161c-8-22 8-36 31-39-2 23-15 38-34 37" stroke="#2F7D3C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M142 165c10-17 20-29 34-40" stroke="#2F7D3C" stroke-width="5" stroke-linecap="round"/>
   </g>
 
   <text x="226" y="121" fill="#062B5F" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="500" letter-spacing="-1">Eduficia</text>
