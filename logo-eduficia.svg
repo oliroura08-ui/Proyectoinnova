@@ -1,0 +1,46 @@
+<svg width="820" height="220" viewBox="0 0 820 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>eduficia logo</title>
+  <rect width="820" height="220" rx="36" fill="#F8FBFF"/>
+  <rect x="18" y="18" width="784" height="184" rx="30" stroke="#D9E4F2" stroke-width="2"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="122" cy="110" r="70" fill="#FFFFFF"/>
+    <circle cx="122" cy="110" r="68" stroke="#D9E4F2" stroke-width="2"/>
+
+    <path d="M70 139A58 58 0 0 1 156 63" stroke="#062B5F" stroke-width="7" stroke-linecap="round"/>
+    <path d="M151 49l17 18-24 4" stroke="#2F7D3C" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M174 81a58 58 0 0 1-86 76" stroke="#2F7D3C" stroke-width="7" stroke-linecap="round"/>
+    <path d="M93 172l-17-18 24-4" stroke="#062B5F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path d="M56 128c25-16 105-16 132 0" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M101 84h42v38h-42V84Z" fill="#FFFFFF" stroke="#062B5F" stroke-width="4.5" stroke-linejoin="round"/>
+    <path d="M90 85l32-25 32 25" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M109 91v29M122 91v29M135 91v29" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M122 60V42M122 44h17v10h-17" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path d="M66 111V141H92V107L79 96L64 107" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M152 107V141H178V111L165 96L150 107" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M76 119h6M76 132h6M162 119h6M162 132h6" stroke="#062B5F" stroke-width="4.5" stroke-linecap="round"/>
+
+    <path d="M62 147h17l8-24 11 42 10-27 7 9h19" stroke="#2F7D3C" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M144 156c-9-27 8-47 40-52-2 33-22 53-47 50" stroke="#2F7D3C" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M139 165c14-24 28-39 45-55" stroke="#2F7D3C" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+
+  <text x="226" y="121" fill="#062B5F" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="500" letter-spacing="-1">Eduficia</text>
+  <path d="M238 151h68M492 151h68" stroke="#2F7D3C" stroke-width="2"/>
+  <text x="322" y="158" fill="#2F7D3C" font-family="Georgia, 'Times New Roman', serif" font-size="24">Energia que educa.</text>
+
+  <defs>
+    <filter id="shadow" x="32" y="18" width="180" height="184" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="8"/>
+      <feGaussianBlur stdDeviation="14"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.04 0 0 0 0 0.17 0 0 0 0 0.37 0 0 0 0.18 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+</svg>

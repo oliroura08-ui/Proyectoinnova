@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eduficia | Gestion energetica escolar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="eduficia">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" focusable="false">
+            <path class="logo-orbit" d="M13 35c2-14 12-24 28-26 8 11 9 25 1 35-7 9-19 12-28 5 7-2 15-7 22-17-8 7-16 11-23 12-1-3-1-6 0-9Z"/>
+            <path class="logo-spark" d="M35 15 20 36h11l-4 13 17-22H33l2-12Z"/>
+          </svg>
+        </span>
+        <span>
+          <strong>eduficia</strong>
+          <small>energia escolar inteligente</small>
+        </span>
+      </a>
+
+      <nav class="tabs" aria-label="Navegacion principal">
+        <button class="tab active" data-tab="inicio">Inicio</button>
+        <button class="tab" data-tab="dashboard">Dashboard</button>
+        <button class="tab" data-tab="ranking">Ranking</button>
+        <button class="tab" data-tab="calculadora">Calculadora</button>
+        <button class="tab" data-tab="simulador">Simulador</button>
+        <button class="tab" data-tab="premios">Premios</button>
+        <button class="tab" data-tab="impacto">Impacto</button>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar modo">
+        <span class="theme-icon">DIA</span>
+        <span class="theme-label">Claro</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="panel active" id="inicio">
+        <div class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">eduficia convierte energia en aprendizaje</span>
+            <h1>Escuelas que gestionan su energia con datos.</h1>
+            <p>
+              eduficia mide consumos, ordena acciones de ahorro y convierte la mejora continua
+              en una competencia clara, elegante y motivadora para toda la comunidad escolar.
+            </p>
+            <div class="hero-pills" aria-label="Indicadores de propuesta">
+              <span>KPIs energeticos</span>
+              <span>Ranking semestral</span>
+              <span>Decisiones con datos</span>
+            </div>
+            <div class="hero-actions">
+              <button class="primary-btn" data-jump="dashboard" type="button">Ver dashboard</button>
+              <button class="ghost-btn" data-jump="calculadora" type="button">Calcular puntaje</button>
+            </div>
+          </div>
+
+          <div class="hero-board" aria-label="Resumen ejecutivo">
+            <div class="board-header">
+              <span>Indice de eficiencia</span>
+              <strong id="heroEfficiency">84%</strong>
+            </div>
+            <div class="energy-ring">
+              <div>
+                <strong id="heroLeaderScore">92</strong>
+                <span>puntos lider</span>
+              </div>
+            </div>
+            <div class="mini-grid">
+              <article>
+                <span>Ahorro estimado</span>
+                <strong>18.6%</strong>
+              </article>
+              <article>
+                <span>CO2 evitado</span>
+                <strong>4.8 t</strong>
+              </article>
+              <article>
+                <span>Escuelas</span>
+                <strong id="heroSchoolCount">6</strong>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="brand-strip" aria-label="Personalidad de marca eduficia">
+          <article>
+            <span>Personalidad</span>
+            <strong>clara, precisa y optimista</strong>
+          </article>
+          <article>
+            <span>Promesa</span>
+            <strong>menos desperdicio, mejores decisiones</strong>
+          </article>
+          <article>
+            <span>Estilo</span>
+            <strong>tecnologia simple para escuelas</strong>
+          </article>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">01</span>
+            <h3>Precision</h3>
+            <p>Mediciones simples para entender consumo inicial, consumo actual, desvio, ahorro y tendencia.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">02</span>
+            <h3>Cultura eficiente</h3>
+            <p>Acciones concretas, indicadores y alertas para sostener habitos de ahorro durante cada semestre.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">03</span>
+            <h3>Progreso visible</h3>
+            <p>Ranking semestral, ganador visible, incentivos energeticos y reinicio para una nueva etapa.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="dashboard">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Centro de control</span>
+            <h2>Panel eduficia de eficiencia energetica</h2>
+          </div>
+          <button class="secondary-btn" id="restoreDemoTop" type="button">Restaurar datos de ejemplo</button>
+        </div>
+
+        <div class="metric-grid">
+          <article class="metric-card">
+            <span>Consumo mensual</span>
+            <strong>12.840 kWh</strong>
+            <small class="positive">-14.2% vs linea base</small>
+          </article>
+          <article class="metric-card">
+            <span>Puntaje promedio</span>
+            <strong id="avgScore">0</strong>
+            <small>calculo del semestre activo</small>
+          </article>
+          <article class="metric-card">
+            <span>Participacion</span>
+            <strong>86%</strong>
+            <small class="positive">12 aulas con brigadas energeticas</small>
+          </article>
+          <article class="metric-card">
+            <span>ROI operativo</span>
+            <strong>7.4 meses</strong>
+            <small>recupero de mejoras de bajo costo</small>
+          </article>
+        </div>
+
+        <div class="dashboard-layout">
+          <article class="card wide">
+            <div class="card-title">
+              <h3>Consumo por mes</h3>
+              <span>kWh</span>
+            </div>
+            <div class="chart" id="consumptionChart" aria-label="Grafico simple de consumo"></div>
+          </article>
+
+          <article class="card">
+            <div class="card-title">
+              <h3>Objetivos de gestion</h3>
+              <span>avance</span>
+            </div>
+            <div class="progress-list">
+              <div class="progress-item">
+                <span>Reducir consumo pico</span>
+                <div class="progress-bar"><span style="width: 72%"></span></div>
+                <strong>72%</strong>
+              </div>
+              <div class="progress-item">
+                <span>Auditorias por aula</span>
+                <div class="progress-bar"><span style="width: 58%"></span></div>
+                <strong>58%</strong>
+              </div>
+              <div class="progress-item">
+                <span>Automatizar apagado</span>
+                <div class="progress-bar"><span style="width: 81%"></span></div>
+                <strong>81%</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="card alerts-card">
+            <div class="card-title">
+              <h3>Alertas inteligentes</h3>
+              <span>IA operativa</span>
+            </div>
+            <ul class="alerts">
+              <li><strong>Pico detectado:</strong> climatizacion alta entre 13:00 y 15:00.</li>
+              <li><strong>Oportunidad:</strong> cambiar tubos fluorescentes restantes ahorraria 420 kWh/mes.</li>
+              <li><strong>Mejora:</strong> la escuela lider sostuvo 4 semanas de reduccion continua.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="ranking">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Liga eduficia</span>
+            <h2>Ranking de escuelas</h2>
+          </div>
+          <div class="button-row">
+            <button class="secondary-btn" id="closeSemester" type="button">Cerrar semestre</button>
+            <button class="danger-btn" id="resetScores" type="button">Resetear puntajes</button>
+            <button class="ghost-btn" id="restoreDemo" type="button">Datos de ejemplo</button>
+          </div>
+        </div>
+
+        <div class="winner-banner" id="winnerBanner">
+          <span>Ganador del semestre</span>
+          <strong id="winnerName">Aun no cerrado</strong>
+          <small id="winnerDetail">Cierra el semestre para declarar ganador.</small>
+        </div>
+
+        <article class="card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Escuela</th>
+                  <th>Mejora</th>
+                  <th>Acciones</th>
+                  <th>Participacion</th>
+                  <th>Puntaje</th>
+                </tr>
+              </thead>
+              <tbody id="rankingBody"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel" id="calculadora">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Formula de puntaje</span>
+            <h2>Calculadora de rendimiento</h2>
+          </div>
+        </div>
+
+        <div class="calculator-grid">
+          <form class="card form-card" id="scoreForm">
+            <div class="info-note">
+              <strong>Que son las acciones?</strong>
+              <p>
+                Son medidas concretas de ahorro energetico que la escuela implementa durante el semestre:
+                cambiar luces por LED, instalar sensores, apagar equipos en standby, optimizar climatizacion
+                o hacer campanas de uso responsable. Cada accion registrada suma al puntaje.
+              </p>
+            </div>
+            <label>
+              Escuela
+              <input id="schoolName" type="text" placeholder="Ej: Colegio Energia Sur" required>
+            </label>
+            <label>
+              Consumo inicial mensual (kWh)
+              <input id="initialConsumption" type="number" min="1" value="18000" required>
+            </label>
+            <label>
+              Consumo actual mensual (kWh)
+              <input id="currentConsumption" type="number" min="0" value="14500" required>
+            </label>
+            <label>
+              Acciones implementadas
+              <input id="actionsCount" type="number" min="0" max="20" value="7" required>
+            </label>
+            <label>
+              Participacion estudiantil (%)
+              <input id="participation" type="number" min="0" max="100" value="80" required>
+            </label>
+            <div class="button-row">
+              <button class="primary-btn" type="submit">Calcular</button>
+              <button class="secondary-btn" id="addToRanking" type="button">Agregar al ranking</button>
+            </div>
+          </form>
+
+          <article class="score-result">
+            <span>Puntaje calculado</span>
+            <strong id="scoreOutput">0</strong>
+            <p id="formulaDetail">Completa los datos para evaluar eficiencia, acciones y participacion.</p>
+            <div class="score-meter">
+              <span id="scoreMeter"></span>
+            </div>
+            <small>puntaje = mejora * 2 + acciones * 4 + participacion * 0.3</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="simulador">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Toma de decisiones</span>
+            <h2>Simulador de acciones energeticas</h2>
+            <p class="section-copy">
+              Marca las decisiones que podria tomar una escuela. El simulador estima ahorro mensual,
+              puntos operativos y recursos necesarios para mejorar la eficiencia.
+            </p>
+          </div>
+        </div>
+
+        <div class="simulator-grid">
+          <article class="card">
+            <div class="decision-list" id="decisionList">
+              <label><input type="checkbox" value="8" data-kwh="620"> Reemplazar iluminacion por LED</label>
+              <label><input type="checkbox" value="6" data-kwh="430"> Sensores de presencia en pasillos</label>
+              <label><input type="checkbox" value="5" data-kwh="380"> Campana de apagado responsable</label>
+              <label><input type="checkbox" value="7" data-kwh="510"> Programacion eficiente de climatizacion</label>
+              <label><input type="checkbox" value="4" data-kwh="260"> Tablero visual por aula</label>
+              <label><input type="checkbox" value="5" data-kwh="330"> Auditoria semanal de equipos en standby</label>
+            </div>
+          </article>
+
+          <article class="simulator-result">
+            <span>Ahorro proyectado</span>
+            <strong id="simSavings">0 kWh</strong>
+            <p id="simImpact">Selecciona acciones para estimar impacto mensual y puntos operativos.</p>
+            <div class="impact-stack">
+              <div><span>Puntos por acciones</span><strong id="simPoints">0</strong></div>
+              <div><span>CO2 evitado</span><strong id="simCo2">0 kg</strong></div>
+              <div><span>Ahorro economico</span><strong id="simMoney">$0</strong></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="premios">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Incentivos</span>
+            <h2>Premios e instrumentos de optimizacion</h2>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card prize">
+            <span class="feature-icon">1</span>
+            <h3>Panel solar educativo</h3>
+            <p>Modulo fotovoltaico con inversor didactico para medir generacion, autoconsumo y ahorro real.</p>
+          </article>
+          <article class="feature-card prize">
+            <span class="feature-icon">2</span>
+            <h3>Kit de medicion inteligente</h3>
+            <p>Medidores de consumo, pinza amperometrica y sensores para detectar picos, perdidas y oportunidades.</p>
+          </article>
+          <article class="feature-card prize">
+            <span class="feature-icon">3</span>
+            <h3>Automatizacion de ahorro</h3>
+            <p>Sensores de presencia, temporizadores y enchufes inteligentes para optimizar iluminacion y equipos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="impacto">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Impacto medible</span>
+            <h2>Ingenieria industrial aplicada a escuelas</h2>
+          </div>
+        </div>
+
+        <div class="impact-layout">
+          <article class="card wide">
+            <h3>De datos a decisiones</h3>
+            <p>
+              La plataforma combina indicadores de consumo, participacion, acciones y resultados para que cada
+              escuela pueda priorizar recursos, reducir desperdicios y sostener un sistema de mejora continua.
+            </p>
+            <div class="timeline">
+              <span>Medir</span>
+              <span>Analizar</span>
+              <span>Implementar</span>
+              <span>Controlar</span>
+              <span>Mejorar</span>
+            </div>
+          </article>
+          <article class="metric-card impact-kpi">
+            <span>Meta anual potencial</span>
+            <strong>24%</strong>
+            <small>reduccion acumulada de consumo electrico</small>
+          </article>
+          <article class="metric-card impact-kpi">
+            <span>Gestion de recursos</span>
+            <strong>+32%</strong>
+            <small>mejor visibilidad para decidir inversiones</small>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
